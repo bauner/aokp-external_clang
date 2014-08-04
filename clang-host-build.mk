@@ -2,10 +2,12 @@ LOCAL_CFLAGS :=	\
 	-pedantic	\
 	-Wcast-qual	\
 	-Wno-long-long	\
+	-Wno-error=strict-aliasing \
 	$(LOCAL_CFLAGS)
 
 LOCAL_CPPFLAGS := \
 	-Wno-sign-promo \
+	-Wno-error=strict-aliasing \
 	$(LOCAL_CPPFLAGS)
 
 # Make sure bionic is first so we can include system headers.
